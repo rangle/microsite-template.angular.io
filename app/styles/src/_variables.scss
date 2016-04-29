@@ -163,7 +163,7 @@ $button-secondary-color-disabled: unquote("rgba(#{$color-black}, 0.26)") !defaul
 $button-fab-color-alt: $main-light !default;
 $button-fab-hover-color-alt: unquote("rgb(#{$color-accent})") !default;
 $button-fab-active-color-alt: unquote("rgb(#{$color-accent})") !default;
-$button-fab-text-color-alt: unquote("rgb(#{$color-accent-contrast})") !default;
+$button-fab-text-color-alt: unquote("rgb(#{$color-black})") !default;
 $button-fab-ripple-color-alt: unquote("rgb(#{$color-accent-contrast})") !default;
 
 // Icon button colors and sizes.
