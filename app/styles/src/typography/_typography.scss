@@ -73,6 +73,7 @@
 
     margin-top: 24px;
     margin-bottom: 16px;
+    max-width: 300px;
   }
 
   h6 {
@@ -92,7 +93,6 @@
     color: $text-link-color;
     font-weight: 500;
     padding: 10px;
-    text-decoration: none;
   }
 
   blockquote {
@@ -300,4 +300,11 @@
 
 .material-icons {
   @include typo-icon;
+}
+
+.mdl-mega-footer h4 {
+  color: white;
+  font-size: 24px;
+  text-transform: uppercase;
+  opacity: .87;
 }

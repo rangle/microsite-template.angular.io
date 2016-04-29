@@ -19,7 +19,7 @@
 
 .mdl-mega-footer {
   padding: $footer-min-padding;
-
+  margin-top: 60px;
   color: $footer-color;
   background-color: $footer-bg-color;
 }
@@ -307,12 +307,9 @@
 .mdl-mega-footer--bottom-section .mdl-mega-footer--link-list li,
 .mdl-mega-footer__bottom-section .mdl-mega-footer__link-list li {
   float: left;
-
   margin-bottom: 0;
   margin-right: $footer-min-padding;
 }
-
-
 
 @media screen and (min-width: 760px) {
   .mdl-logo {
@@ -323,20 +320,17 @@
   }
 }
 
-.test {
-  padding-top: 10%;
-}
-
 .mdl-mega-footer--bottom-section,
 .mdl-mega-footer__bottom-section {
   padding-top: 0;
-  background-color: #233137;
+  background-color: #263238;
   color: white;
   padding: 16px;
 
   & a {
     font-weight: normal;
     padding: 0;
+    text-decoration: none;
   }
 
   & p {
