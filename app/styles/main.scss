@@ -28,6 +28,7 @@ html, body {
 }
 .mdl-demo .mdl-layout__header-row {
   padding-left: 40px;
+  overflow: scroll;
 }
 .mdl-demo .mdl-layout.is-small-screen .mdl-layout__header-row h3 {
   font-size: inherit;
@@ -58,7 +59,7 @@ html, body {
   line-height: 64px;
 }
 .mdl-demo .mdl-layout__tab-bar .mdl-layout__tab.is-active::after {
-  background-color: white;
+  background-color: $color-white;
   height: 4px;
 }
 .mdl-demo main > .mdl-layout__tab-panel {
@@ -113,7 +114,7 @@ html, body {
   margin-bottom: 48px;
 }
 .mdl-demo section.section--center {
-  max-width: 860px;
+  max-width: 920px;
 }
 .mdl-demo #features section.section--center {
   max-width: 620px;
@@ -184,7 +185,7 @@ html, body {
   margin-bottom: 24px;
 }
 .mdl-demo .mdl-layout__tab-panel:not(#overview) {
-  background-color: white;
+  background-color: $color-white;
 }
 .mdl-demo #features section {
   margin-bottom: 72px;

@@ -26,14 +26,17 @@
 }
 
 .mdl-navigation__link {
-  color: $layout-text-color;
   text-decoration: none;
   margin: 0;
-  @include typo-body-1(true);
+  @include typo-nav(true);
 
   // Align icons inside link with text
   & .material-icons {
     vertical-align: middle;
+  }
+
+  &:hover {
+    background-color: #2F7CCB;
   }
 }
 
@@ -247,9 +250,7 @@
     background-color: #0148A9;
     color: $layout-header-text-color;
 
-    @include shadow-2dp();
-    @include material-animation-default();
-    transition-property: max-height, box-shadow;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 
     @media screen and (max-width: $layout-screen-size-threshold) {
       min-height: $layout-mobile-header-height;
@@ -315,31 +316,32 @@
     }
   }
 
-    .mdl-layout__header--transparent.mdl-layout__header--transparent {
-      background-color: transparent;
-      box-shadow: none;
-    }
-
-    .mdl-layout__header--seamed {
-      box-shadow: none;
-    }
-
-    .mdl-layout__header--scroll {
-      box-shadow: none;
-    }
-
-    .mdl-layout__header--waterfall {
-      box-shadow: none;
-      overflow: hidden;
-
-      &.is-casting-shadow {
-        @include shadow-2dp();
-      }
-
-      &.mdl-layout__header--waterfall-hide-top {
-        justify-content: flex-end;
-      }
-    }
+    // .mdl-layout__header--transparent.mdl-layout__header--transparent {
+    //   background-color: transparent;
+    //   box-shadow: none;
+    // }
+    //
+    // .mdl-layout__header--seamed {
+    //   box-shadow: none;
+    // }
+    //
+    // .mdl-layout__header--scroll {
+    //   box-shadow: none;
+    //   overflow: scroll;
+    // }
+    //
+    // .mdl-layout__header--waterfall {
+    //   box-shadow: none;
+    //   overflow: hidden;
+    //
+    //   &.is-casting-shadow {
+    //     @include shadow-2dp();
+    //   }
+    //
+    //   &.mdl-layout__header--waterfall-hide-top {
+    //     justify-content: flex-end;
+    //   }
+    // }
 
     .mdl-layout__header-row {
       display: flex;
@@ -670,13 +672,11 @@
   }
 
   .tagline {
-    max-width: 300px;
   }
 
-  .background-sky {
-    background-color: #0143A3;
-    background: -webkit-linear-gradient(#0143A3, #0273D4);
-    background: linear-gradient(#0143A3, #0273D4);
+  .hero-background {
+    background-color: $background-primary;
+    background: linear-gradient($background-secondary, $background-primary);
     color: #fff;
     margin-bottom: 60px;
   }
@@ -684,7 +684,70 @@
   .reverse {
   }
 
-@media (min-width: 0px) and (max-width: 620px) {
+
+  .img-placeholder {
+    width: 100%;
+    max-width: 400px;
+    height: 180px;
+    background-color: white;
+  }
+
+
+  .features-list {
+    max-width: 920px;
+    margin: 0 0 23px 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 200px 15px 15px;
+
+    & h4 {
+      font-size: 28px;
+      margin-top: 10px;
+      color: #37474F;
+      margin: 0 0 16px 0;
+      font-weight: 400;
+      opacity: .87;
+      line-height: 32px;
+      font-weight: 500;
+    }
+
+    & p {
+      margin: 0 0 16px 0;
+      font-size: 16px;
+      font-weight: 400;
+      opacity: .87;
+      line-height: 30px;
+    }
+  }
+
+  ul.mdl-mini-footer--link-list {
+    margin-top: 13%;
+    color: white;
+  }
+
+  .top-nav {
+    background-color: $background-primary;
+  }
+
+  footer ul {
+    list-style: none;
+    padding: 0;
+
+    & a {
+      padding: 0;
+      font-size: 16px;
+      font-weight: 300;
+      opacity: .87;
+      line-height: 28px;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+@media (min-width: 0px) and (max-width: 830px) {
   .mdl-cell {
       margin: 8px;
       width: calc(50% - 16px);
@@ -705,43 +768,19 @@
   .tagline {
     max-width: 100%;
   }
-}
 
-.img-placeholder {
-  width: 200px;
-  height: 180px;
-  background-color: white;
-}
+  .mdl-grid.mdl-grid--no-spacing > .mdl-cell {
+    text-align: center;
+    .img-placeholder {
+      margin: 0 auto;
+    }
+  }
 
+  .img-placeholder {
+    margin: 0 auto;
+  }
 
-.features-list {
-  max-width: 920px;
-  margin: 0 0 45px 0;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 15px;
-}
-
-.features-list h4 {
-  font-size: 28px;
-  margin-top: 10px;
-  color: #37474F;
-  margin: 0 0 16px 0;
-  font-weight: 400;
-  opacity: .87;
-  line-height: 32px;
-  font-weight: 500;
-}
-
-.features-list p{
-  margin: 0 0 16px 0;
-  font-size: 16px;
-  font-weight: 400;
-  opacity: .87;
-  line-height: 30px;
-}
-
-ul.mdl-mini-footer--link-list {
-  margin-top: 13%;
-  color: white;
+  .features-list {
+    padding: 15px;
+  }
 }

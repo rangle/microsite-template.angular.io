@@ -27,7 +27,7 @@
   height: $button-height;
   margin: 0;
   min-width: $button-min-width;
-  padding: 0 $button-padding;
+  padding: 0 38px;
   display: inline-block;
   @include typo-button();
   overflow: hidden;
