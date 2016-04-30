@@ -129,9 +129,9 @@ $target-elements-directly: true !default;
 
 /* ==========  Theme Colors  ========== */
 // Main theme colors.
-$main-primary: unquote("rgb(#{$palette-blue-500})"); // This is your primary color theme
-$main-secondary: unquote("rgb(#{$palette-blue-700})"); // This is the darker shade within the same palette
-$main-light: unquote("rgb(#{$palette-blue-500})"); // This is the lighest shade within the same palette
+$main-primary: unquote("rgb(#{$palette-blue-grey-500})"); // This is your primary color theme
+$main-secondary: unquote("rgb(#{$palette-blue-grey-700})"); // This is the darker shade within the same palette
+$main-light: unquote("rgb(#{$palette-blue-grey-500})"); // This is the lighest shade within the same palette
 $main-neutral: unquote("rgb(#{$color-white})"); // This is a nutral color (white)
 $main-primary-dark: unquote("rgb(#{$palette-blue-900})"); // This is a the darket primary color
 
