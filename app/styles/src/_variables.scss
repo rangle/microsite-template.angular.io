@@ -129,8 +129,10 @@ $target-elements-directly: true !default;
 
 /* ==========  Theme Colors  ========== */
 // Main theme colors.
-$background-primary: unquote("rgb(#{$palette-blue-500})");
-$background-secondary: unquote("rgb(#{$palette-blue-700})");
+$main-primary: unquote("rgb(#{$palette-blue-500})"); // This is your primary color theme
+$main-secondary: unquote("rgb(#{$palette-blue-700})"); // This is the darker shade within the same palette
+$main-light: unquote("rgb(#{$palette-blue-500})"); // This is the lighest shade within the same palette
+$main-neutral: unquote("rgb(#{$color-white})"); // This is a nutral color (white)
 
 /* ==========  Components  ========== */
 
@@ -144,7 +146,7 @@ $button-active-color: unquote("rgba(#{$palette-grey-500}, 0.40)") !default;
 $button-focus-color: unquote("rgba(#{$color-black}, 0.12)") !default;
 
 // Colored button colors.
-$button-primary-color-alt: unquote("rgb(#{$color-primary})") !default;
+$button-primary-color-alt: $main-neutral !default;
 $button-secondary-color-alt: unquote("rgb(#{$color-primary-contrast})") !default;
 $button-hover-color-alt: unquote("rgb(#{$color-primary})") !default;
 $button-active-color-alt: unquote("rgb(#{$color-primary})") !default;
@@ -158,7 +160,7 @@ $button-primary-color-disabled: unquote("rgba(#{$color-black}, 0.12)") !default;
 $button-secondary-color-disabled: unquote("rgba(#{$color-black}, 0.26)") !default;
 
 // FAB colors and sizes.
-$button-fab-color-alt: unquote("rgb(#{$palette-blue-900})") !default;
+$button-fab-color-alt: $main-light !default;
 $button-fab-hover-color-alt: unquote("rgb(#{$color-accent})") !default;
 $button-fab-active-color-alt: unquote("rgb(#{$color-accent})") !default;
 $button-fab-text-color-alt: unquote("rgb(#{$color-accent-contrast})") !default;

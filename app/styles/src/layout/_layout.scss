@@ -36,7 +36,7 @@
   }
 
   &:hover {
-    background-color: #2F7CCB;
+    background-color: $main-secondary;
   }
 }
 
@@ -675,8 +675,8 @@
   }
 
   .hero-background {
-    background-color: $background-primary;
-    background: linear-gradient($background-secondary, $background-primary);
+    background-color: $main-primary;
+    background: linear-gradient($main-secondary, $main-primary);
     color: #fff;
     margin-bottom: 60px;
   }
@@ -685,7 +685,7 @@
   }
 
 
-  .img-placeholder {
+  .main-image {
     width: 100%;
     max-width: 400px;
     height: 180px;
@@ -726,7 +726,7 @@
   }
 
   .top-nav {
-    background-color: $background-primary;
+    background-color: $main-primary;
   }
 
   footer ul {
@@ -771,12 +771,12 @@
 
   .mdl-grid.mdl-grid--no-spacing > .mdl-cell {
     text-align: center;
-    .img-placeholder {
+    .main-image {
       margin: 0 auto;
     }
   }
 
-  .img-placeholder {
+  .main-image {
     margin: 0 auto;
   }
 

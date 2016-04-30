@@ -86,7 +86,6 @@
   font-weight: 300;
   line-height: 28px;
   letter-spacing: 0.02em;
-  margin-right: 60px;
 
   @if $colorContrast {
     opacity: 0.87;
@@ -147,7 +146,7 @@
 
 @mixin typo-nav($colorContrast: false, $usePreferred: false) {
   @include typo-preferred-font($usePreferred);
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0;
@@ -210,7 +209,7 @@
 @mixin typo-button($colorContrast: false, $usePreferred: true) {
   @include typo-preferred-font($usePreferred);
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   text-transform: uppercase;
   line-height: 1;
   letter-spacing: 0;
