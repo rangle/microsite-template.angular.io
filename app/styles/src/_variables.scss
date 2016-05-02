@@ -133,7 +133,7 @@ $main-primary: unquote("rgb(#{$palette-amber-700})"); // This is your primary co
 $main-secondary: unquote("rgb(#{$palette-amber-900})"); // This is the darker shade within the same palette
 $main-light: unquote("rgb(#{$palette-amber-700})"); // This is the lighest shade within the same palette
 $main-neutral: unquote("rgb(#{$color-white})"); // This is a nutral color (white)
-$main-primary-dark: unquote("rgb(#{$palette-blue-900})"); // This is a the darket primary color
+$main-primary-dark: unquote("rgb(#{$palette-amber-900})"); // This is a the darket primary color
 
 /* ==========  Components  ========== */
 
