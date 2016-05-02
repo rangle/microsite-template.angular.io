@@ -1,4 +1,12 @@
-# [![Web Starter Kit](https://cloud.githubusercontent.com/assets/110953/11445049/f05512ba-9520-11e5-8fdb-8c8eb5f690d0.jpg)](https://github.com/google/web-starter-kit/releases/latest)
+## Updating Microsites
+
+* The microsite base template is located in the `master` branch, any changes made to master should be rebased into a microsite.
+* To access a microsite, branch off to `microsite-[NAME OF MICROSITE]` (universal, cli, augury, mobile, material, protractor etc.).
+* This setup isn't optimal, and we will be changing it after our deadline to something more suitable, whatever we decide that is.
+* FORK, and do a PR to match the branch you want to update.
+* All microsite have a unique primary and secondary theme color based on Material Design. These colours must belong in the same color family. The microsite theme color variable are set in variables.scss.
+
+## [![Web Starter Kit](https://cloud.githubusercontent.com/assets/110953/11445049/f05512ba-9520-11e5-8fdb-8c8eb5f690d0.jpg)](https://github.com/google/web-starter-kit/releases/latest)
 
 ## Overview
 
