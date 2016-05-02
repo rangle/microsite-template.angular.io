@@ -726,6 +726,11 @@
       opacity: .87;
       line-height: 30px;
     }
+
+    & a {
+      color: inherit;
+      padding: 0;
+    }
   }
 
   ul.mdl-mini-footer--link-list {
