@@ -689,15 +689,15 @@
     width: 100%;
     max-width: 400px;
     height: 180px;
-    background-color: white;
+    margin-top: 20px;
+    text-align: center;
+    margin-left:60px;
   }
 
 
   .features-list {
     max-width: 920px;
     margin: 0 0 23px 0;
-    margin-left: auto;
-    margin-right: auto;
     padding: 15px 200px 15px 15px;
 
     & h4 {
@@ -717,6 +717,11 @@
       font-weight: 400;
       opacity: .87;
       line-height: 30px;
+    }
+
+    & a {
+      color: inherit;
+      padding: 0;
     }
   }
 
