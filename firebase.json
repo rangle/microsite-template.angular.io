@@ -1,5 +1,5 @@
 {
-  "firebase": "microsite-template",
+  "firebase": "microsite-cli",
   "public": "dist",
   "ignore": [
     "firebase.json",
