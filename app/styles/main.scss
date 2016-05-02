@@ -277,7 +277,7 @@ TODO: Replace this with data-binding when Angular is included
     nav {
       clear: both;
       display: none;
-      background: #002B95;
+      background: $main-secondary;
       height: auto !important;
       a {
         display: block;
@@ -289,7 +289,7 @@ TODO: Replace this with data-binding when Angular is included
   }
   input:checked + .top-nav-wrapper {
     label {
-      background: #002B95;
+      background: $main-secondary;
     }
 
     nav {
