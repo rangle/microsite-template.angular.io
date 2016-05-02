@@ -40,6 +40,14 @@
   }
 }
 
+.mdl-navigation__link--title {
+  text-decoration: none;
+  // Align icons inside link with text
+  & .material-icons {
+    vertical-align: middle;
+  }
+}
+
 // Main layout class.
 .mdl-layout {
   width: 100%;
@@ -696,8 +704,6 @@
   .features-list {
     max-width: 920px;
     margin: 0 0 23px 0;
-    margin-left: auto;
-    margin-right: auto;
     padding: 15px 200px 15px 15px;
 
     & h4 {
