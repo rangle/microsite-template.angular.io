@@ -1,5 +1,5 @@
 {
-  "firebase": "microsite-universal",
+  "firebase": "universal-angular-io",
   "public": "dist",
   "ignore": [
     "firebase.json",
