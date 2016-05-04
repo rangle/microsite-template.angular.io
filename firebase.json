@@ -1,5 +1,5 @@
 {
-  "firebase": "microsite-material",
+  "firebase": "material-angular-io",
   "public": "dist",
   "ignore": [
     "firebase.json",
