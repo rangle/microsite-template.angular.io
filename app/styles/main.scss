@@ -224,5 +224,11 @@ html, body {
 .center {
   text-align: center;
 }
+.mdl-grid {
+  align-items: center;
+}
+.power-text {
+  text-align: right;
+}
 
 @import "site-header";
