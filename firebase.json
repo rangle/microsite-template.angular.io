@@ -1,5 +1,5 @@
 {
-  "firebase": "microsite-cli",
+  "firebase": "cli-angular-io",
   "public": "dist",
   "ignore": [
     "firebase.json",
