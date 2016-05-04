@@ -1,5 +1,5 @@
 {
-  "firebase": "microsite-protractor",
+  "firebase": "protractor-angular-io",
   "public": "dist",
   "ignore": [
     "firebase.json",
