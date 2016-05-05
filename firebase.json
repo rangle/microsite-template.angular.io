@@ -1,5 +1,5 @@
 {
-  "firebase": "test-augury-site",
+  "firebase": "augury-angular-io",
   "public": "dist",
   "ignore": [
     "firebase.json",
