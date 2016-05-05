@@ -20,7 +20,7 @@
       <header class="mdl-layout__header mdl-layout__header--scroll">
         <div class="mdl-layout__header-row top-nav">
           <span class="mdl-layout-title mdl-typography--font-light">
-            <a class="site-header mdl-navigation__link--title" href="/index.html">
+            <a class="site-header mdl-navigation__link--title" href="/">
               <svg class="site-logo" width="125px" viewBox="0 0 506 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                       <g id="Angular Logo">
@@ -56,10 +56,18 @@
               <span class="microsite-name">UNIVERSAL</span>
             </a>
           </span>
+          <input type="checkbox" id="site-nav-checkbox" class="visuallyhidden">
           <div class="top-nav-wrapper">
+            <label for="site-nav-checkbox">SITE MENU</label>
+            <nav class="mdl-navigation">
+              <a class="mdl-navigation__link" href="/overview/">Overview</a>
+              <a class="mdl-navigation__link" href="/api/">API</a>
+              <!--<a class="mdl-navigation__link" href="/recipes/">Recipes</a>-->
+              <a class="mdl-navigation__link" href="https://github.com/angular/universal">Github</a>
+            </nav>
             <div class="mdl-layout-spacer"></div>
             <nav class="mdl-navigation">
-              <a class="mdl-navigation__link" href="https://github.com/angular/universal">Get Started</a>
+              <a class="mdl-navigation__link" href="/quickstart/">Get Started</a>
             </nav>
           </div>
         </div>
@@ -82,7 +90,7 @@
                 <h4 class="mt1">Angular Universal</h4>
                 <h5 class="mt1 mb3 mr0 tagline">Server-side Rendering for Angular 2 apps</h5>
                 <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary">
-                  <a href="https://github.com/angular/universal" class="mdl-typography--font-regular"> Get Started </a>
+                  <a href="/quickstart/" class="mdl-typography--font-regular"> Get Started </a>
                 </button>
             </div>
           </section>
@@ -94,22 +102,36 @@
 
           <div class="features-list">
             <h4>Better Perceived Performance</h4>
-            <p>First time users of your application will instantly see a server rendered view which greatly improves perceived performance and the overall user experience.</p>
+            <p>
+              First time users of your application will instantly see a server rendered view
+              which greatly improves perceived performance and the overall user experience.
+              According to
+              <a style="color:blue;padding:0" href="http://googleresearch.blogspot.com/2009/06/speed-matters.html">research at Google</a>,
+              the difference of just 200 milliseconds in page load performance has an impact on
+              user behavior.
+            </p>
           </div>
 
           <div class="features-list">
             <h4>Optimized for Search Engines</h4>
-            <p>Although Googlebot crawls and renders most dynamic sites, many search engines expect plain HTML. Server-side prerendering is a reliable, flexible and efficient way to ensure that all search engines can access your content.</p>
+            <p>
+              Although <a style="color:blue;padding:0" href="https://webmasters.googleblog.com/2015/10/deprecating-our-ajax-crawling-scheme.html">
+              Googlebot crawls and renders most dynamic sites</a>, many search engines expect plain HTML.
+              Server-side pre-rendering is a reliable, flexible and efficient way to ensure that all
+              search engines can access your content.
+            </p>
           </div>
 
           <div class="features-list">
             <h4>Site Preview</h4>
-            <p>Ensure that Facebook, Twitter and all other social media apps correctly display a preview image of your app.</p>
+            <p>
+              Ensure that Facebook, Twitter and all other social media apps correctly display a preview image of your app.
+            </p>
           </div>
 
           <div class="mdl-cell mdl-cell--12-col-desktop center">
             <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-              <a href="https://github.com/angular/universal" class="mdl-typography--font-regular"> Get Started </a>
+              <a href="/quickstart/" class="mdl-typography--font-regular"> Get Started </a>
             </button>
           </div>
         </section>
