@@ -162,7 +162,7 @@ gulp.task('html', () => {
     // Minify any HTML
     .pipe($.if('*.html', $.htmlmin({
       removeComments: true,
-      collapseWhitespace: true,
+      // collapseWhitespace: true,
       collapseBooleanAttributes: true,
       removeAttributeQuotes: true,
       removeRedundantAttributes: true,
